@@ -49,8 +49,12 @@ export const Header = () => {
           </span>
         </Link>
 
-        <a href="">orders history</a>
-        <a href="">buy cart</a>
+        <Link to="/history" className={styles.historySection}>
+          <span className={styles.accountLine_1}>Returns</span>
+          <span className={styles.accountLine_2}>& Orders</span>
+        </Link>
+
+        
       </div>
     </div>
   );
