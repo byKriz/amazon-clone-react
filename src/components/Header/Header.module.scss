@@ -116,6 +116,7 @@ a {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  height: 40px;
 }
 
 .accountSection {
@@ -125,6 +126,9 @@ a {
   color: #fff;
   width: auto;
   height: 40px;
+  padding-left: 10px;
+  
+
 }
 
 .accountLine_1 {
@@ -141,4 +145,36 @@ a {
 .historySection {
   color: white;
   padding-bottom: 6px;
+  padding-left: 10px;
+
+}
+
+.cartSection {
+  color: white;
+  display: flex;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.cartCountContainer {
+  display: flex;
+}
+
+.cartCount {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  color: #f08804;
+  font-weight: 700;
+}
+
+.cartTextContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cartText {
+  font-size: 0.875rem;
+  font-weight: 700;
 }

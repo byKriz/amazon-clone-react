@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 import { GoSearch } from "react-icons/go";
 import { IoMdArrowDropdown } from "react-icons/io";
+import {BsCart} from "react-icons/bs"
 
 export const Header = () => {
   return (
@@ -16,6 +17,8 @@ export const Header = () => {
           />
         </Link>
       </div>
+
+      {/* barra de busqueda */}
       <div className={styles.navSearch}>
         <form action="" method="GET" className={styles.navForm}>
           <div className={styles.navLeft}>
@@ -38,6 +41,7 @@ export const Header = () => {
         </form>
       </div>
 
+      {/* seccion derecha del header */}
       <div className={styles.navRight}>
         <Link to="/account" className={styles.accountSection}>
           <span className={styles.accountLine_1}>Hello, sign in</span>
@@ -54,7 +58,17 @@ export const Header = () => {
           <span className={styles.accountLine_2}>& Orders</span>
         </Link>
 
-        
+        <Link to='/cart' className={styles.cartSection}>
+          <div className={styles.cartCountContainer}>
+            <span className={styles.cartCount}>0</span>
+            <span className={styles.cartIcon}>
+              <BsCart size={35}/>
+            </span>
+          </div>
+          <div className={styles.cartTextContainer}>
+            <span className={styles.cartText}>Cart</span>
+          </div>
+        </Link>
       </div>
     </div>
   );
