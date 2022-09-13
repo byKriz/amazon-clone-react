@@ -1,15 +1,14 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Header } from "./components/Header/Header";
 import { Checkout } from "./pages/Checkout/Checkout";
+import { Home } from "./pages/Home/Home";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Routes>
-          <Route path="/" />
+          <Route path="/" element={<Home />}/>
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
