@@ -10,11 +10,11 @@
   // dimensiones
   max-width: 400px;
   min-width: 290px;
-  height: 420px;
+  height: 392px;
 }
 
 .cardContainer {
-  background: grey;
+  background: white;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -35,4 +35,55 @@
   line-height: 1.7063rem;
   margin: 0;
   padding: 0;
+}
+
+.cardBody {
+  height: 275px;
+  margin-bottom: 44px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.aLink {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.aSection {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.cardImge {
+  height: 100%;
+  max-height: 100%;
+  max-width: none;
+  bottom: -9999px;
+  left: -9999px;
+  margin: auto;
+  position: absolute;
+  right: -9999px;
+  top: -9999px;
+  vertical-align: top;
+}
+
+.cardFooter {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.aLinkCardFooter {
+  text-decoration: none;
+  color: #007185;
+  font-size: 13px;
 }

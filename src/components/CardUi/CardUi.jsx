@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./CardUi.module.scss";
 
-export const CardUi = ({ title = "Product 1", image }) => {
+export const CardUi = ({ title = "Product 1", image, footerText="Shop Now" }) => {
   return (
     <div className={styles.cardUi}>
       <div className={styles.cardContainer}>
@@ -10,15 +10,15 @@ export const CardUi = ({ title = "Product 1", image }) => {
         </div>
 
         <div className={styles.cardBody}>
-          <a href="/">
-            <div>
-              <img src={image} alt="" />
+          <a href="/" className={styles.aLink}>
+            <div className={styles.aSection}>
+              <img src={image} alt="" className={styles.cardImge}/>
             </div>
           </a>
         </div>
 
         <div className={styles.cardFooter}>
-          <a href="">Shop Now</a>
+          <a href="/" className={styles.aLinkCardFooter}>{footerText}</a>
         </div>
       </div>
     </div>
