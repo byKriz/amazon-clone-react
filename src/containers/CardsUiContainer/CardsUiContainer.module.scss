@@ -1,0 +1,12 @@
+.cardsContainer {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+  // padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background: #EAEDED;
+  
+}
